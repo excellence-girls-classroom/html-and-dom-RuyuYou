@@ -4,22 +4,28 @@
         <meta charset="UTF-8">
         <title>UML_tst</title>
 
-        <script type="text/javascript" src="fill%20in%20the%20blank.js"></script>
-        <script type="text/javascript" src="single%20choice.js"></script>
-        <script type="text/javascript" src="multiple%20choice.js"></script>
-        <script type="text/javascript" src="true%20or%20false.js"></script>
-        <script type="text/javascript" src="short%20answer.js"></script>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+        <script type="text/javascript" src="./standardAnswers/fillInTheBlank.js"></script>
+        <script type="text/javascript" src="./standardAnswers/multipleChoice.js"></script>
+        <script type="text/javascript" src="./standardAnswers/shortAnswer.js"></script>
+        <script type="text/javascript" src="./standardAnswers/singleChoice.js"></script>
+        <script type="text/javascript" src="./standardAnswers/trueOrFalse.js"></script>
 
         <script type="text/javascript" src="UML_score.js"></script>
     </head>
 
     <body>
+
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+
     <section>
-        西安软件服务外包服务
+        <p>西安软件服务外包服务</p>
         <hr>
     </section>
     <header>
-        <h1 align="center">统一建模语言理论试题</h1>
+        <h1 class="text-center bg-info">统一建模语言理论试题</h1>
         <table>
             <tr>
                 <td>
@@ -124,13 +130,13 @@
         </header>
         <ol>
             <li >
-                <p>用例图只是用于和客户交流和沟通的,用于确定需求。&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>用例图只是用于和客户交流和沟通的,用于确定需求。
                     <label><input name="judge1" id="judge1_1" type="radio" value="T">True</label>
                     <label><input name="judge1" id="judge1_2" type="radio" value="F">False</label>
                 </p>
             </li>
             <li>
-                <p >在状态图中,终止状态在一个状态图中允许有任意多个。&nbsp;&nbsp;&nbsp;&nbsp;
+                <p>在状态图中,终止状态在一个状态图中允许有任意多个。
                     <label><input name="judge2" id="judge2_1" type="radio" value="T">True</label>
                     <label><input name="judge2" id="judge2_2" type="radio" value="F">False</label>
                 </p>
@@ -142,10 +148,6 @@
         <header>
             <h1>五、简答题(每题20分,共20分)</h1>
         </header>
-        <!--<label for="shortAnswerAnswer">-->
-            <!--1. 简述什么是模型以及模型的表现形式?<br/>-->
-        <!--</label>-->
-        <!--<textarea cols="50" rows="10" name="content" id="shortAnswerAnswer"> </textarea>-->
         <ol>
             <li>
                 <p>简述什么是模型以及模型的表现形式?</p>
@@ -156,8 +158,7 @@
     </section>
 
     <section>
-        <button type=" button" onclick="printScore()">提交</button>
+        <button type="button" class="btn-lg btn-default" onclick="printScore()">提交</button>
     </section>
-
     </body>
 </html>
