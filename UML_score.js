@@ -148,5 +148,5 @@ function makeShortAnswer (answerShort) {
 }
 
 function makeOverAllresults(blankScore, choiceSingle, multipleChoiceScore, trueOrFalseScore, shortAnswerScore) {
-    return blankScore+choiceSingle+multipleChoiceScore+trueOrFalseScore+shortAnswerScore
+    return blankScore+choiceSingle+multipleChoiceScore+trueOrFalseScore+shortAnswerScore;
 }
